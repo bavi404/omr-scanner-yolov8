@@ -54,9 +54,11 @@ dataset/
 omr_output.json
 batch_results/
 uploads/
+temp_uploads/
 *.json
 !requirements.txt
 !data.yaml
+!render.yaml
 
 # Debug/Temporary Images
 *.jpg
