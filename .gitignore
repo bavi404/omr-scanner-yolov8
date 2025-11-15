@@ -1,0 +1,148 @@
+# ============================================================
+# IMPORTANT FILES TO EXCLUDE FROM GITHUB
+# ============================================================
+
+# ============================================================
+# 1. MODEL WEIGHTS (Too large for GitHub - use Git LFS or cloud storage)
+# ============================================================
+*.pt
+*.pth
+*.weights
+*.onnx
+runs/
+best.pt
+yolov8s.pt
+yolov8*.pt
+
+# Store models on:
+# - Google Drive
+# - AWS S3
+# - Hugging Face
+# - Git LFS (if < 100MB)
+
+# ============================================================
+# 2. UPLOADED & TEMPORARY FILES
+# ============================================================
+uploads/
+api_uploads/
+batch_results/
+temp/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+omr_output.json
+omr_debug_annotated.jpg
+*_visualized.jpg
+*_annotated.jpg
+bubble_*.png
+bubble_*.jpg
+
+# Keep example images (if needed for documentation)
+!test/images/example.jpg
+!docs/*.jpg
+!docs/*.png
+
+# ============================================================
+# 3. DATASET IMAGES (Too large - host separately)
+# ============================================================
+train/images/
+valid/images/
+test/images/
+# Keep only data.yaml and folder structure
+
+# ============================================================
+# 4. PYTHON CACHE & ENVIRONMENTS
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+.env
+
+# ============================================================
+# 5. ENVIRONMENT VARIABLES & SECRETS
+# ============================================================
+.env
+.env.local
+.env.production
+*.key
+*.pem
+secrets.json
+config.local.py
+
+# API keys, passwords, tokens
+*_secret*
+*_key*
+credentials.json
+
+# ============================================================
+# 6. IDE & EDITOR FILES
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# 7. LOGS & DEBUG FILES
+# ============================================================
+*.log
+logs/
+*.out
+*.err
+
+# ============================================================
+# 8. JUPYTER NOTEBOOKS (Checkpoints)
+# ============================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================================
+# 9. OPERATING SYSTEM FILES
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# 10. TRAINING & EVALUATION OUTPUTS
+# ============================================================
+experiments/
+wandb/
+mlruns/
+tensorboard/
+lightning_logs/
+
+# ============================================================
+# FILES TO KEEP (Examples)
+# ============================================================
+# ✅ Source code (.py files)
+# ✅ Requirements.txt
+# ✅ Documentation (.md files)
+# ✅ Configuration files (data.yaml, Procfile)
+# ✅ Frontend examples (.html)
+# ✅ README files
+# ✅ License
+# ✅ .gitignore
+

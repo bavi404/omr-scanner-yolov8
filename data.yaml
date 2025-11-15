@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+names:
+  - m_area
+  - mcqs
+  - name
+  - r_number
+  - v_number
+  - bubble_empty
+  - bubble_filled
+nc: 7
