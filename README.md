@@ -1,4 +1,4 @@
-# 🎯 OMR Scanner - YOLOv8
+# OMR Scanner - YOLOv8
 
 AI-powered OMR (Optical Mark Recognition) sheet scanner using YOLOv8 for automated answer sheet processing.
 
@@ -7,25 +7,25 @@ AI-powered OMR (Optical Mark Recognition) sheet scanner using YOLOv8 for automat
 [![Flask](https://img.shields.io/badge/Flask-REST%20API-green.svg)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## ✨ Features
+## Features
 
-- 🤖 **YOLOv8 Detection** - Detects OMR regions (name, roll number, MCQ area)
-- 🔍 **Computer Vision** - Advanced bubble detection and fill analysis
-- 📊 **Answer Extraction** - Generates answer strings (e.g., `ABCDABCD...`)
-- 👤 **Student Info** - Extracts name, roll number, test version via OCR
-- 🌐 **REST API** - Easy website integration with CORS support
-- 📦 **Batch Processing** - Process multiple OMR sheets simultaneously
-- 🎨 **Web Interface** - Beautiful drag & drop UI
-- 🚀 **Production Ready** - Deployment guides for cloud platforms
+-  **YOLOv8 Detection** - Detects OMR regions (name, roll number, MCQ area)
+- **Computer Vision** - Advanced bubble detection and fill analysis
+- **Answer Extraction** - Generates answer strings (e.g., `ABCDABCD...`)
+- **Student Info** - Extracts name, roll number, test version via OCR
+- **REST API** - Easy website integration with CORS support
+- **Batch Processing** - Process multiple OMR sheets simultaneously
+- **Web Interface** - Beautiful drag & drop UI
+- **Production Ready** - Deployment guides for cloud platforms
 
-## 📊 Performance
+## Performance
 
 - **Detection Rate**: ~88% (44/50 questions on test images)
 - **Processing Speed**: ~200ms per image (CPU)
 - **Accuracy**: High accuracy on detected bubbles
 - **Multi-Column Support**: Handles 2-column OMR layouts
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone Repository
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ### 3. Download Model Weights
 
-**⚠️ Model weights not included in repository (too large for GitHub)**
+** Model weights not included in repository (too large for GitHub)**
 
 Download the trained YOLOv8 model (`best.pt`) from:
 - [Google Drive Link](#) - *(Replace with your link)*
@@ -58,7 +58,7 @@ python api_server.py
 
 API will be available at: `http://localhost:5000`
 
-## 📖 Usage Examples
+##  Usage Examples
 
 ### Option 1: Web Interface
 
@@ -92,7 +92,7 @@ curl -X POST -F "file=@omr_sheet.jpg" http://localhost:5000/api/process
 python batch_process.py
 ```
 
-## 🌐 Website Integration
+## Website Integration
 
 Integrate with any website using JavaScript:
 
@@ -115,7 +115,7 @@ async function processOMR(file) {
 
 See `frontend_example.html` for complete integration example.
 
-## 📡 API Endpoints
+##  API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -146,7 +146,7 @@ See `frontend_example.html` for complete integration example.
 }
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐
@@ -179,7 +179,7 @@ See `frontend_example.html` for complete integration example.
 └─────────────────┘
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Deploy to Render (Free)
 
