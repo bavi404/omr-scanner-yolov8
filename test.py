@@ -6,7 +6,7 @@ from omr_processor import OMRProcessor
 # --- CONFIGURATION ---
 # -------------------------------------------------------
 MODEL_PATH = r"C:\Users\sanka\runs\detect\train3\weights\best.pt"
-IMAGE_PATH = r"C:\Users\sanka\Downloads\OMR MCQS DATASET.v1i.yolov8\test\images\img41.jpg"
+IMAGE_PATH = r"C:\Users\sanka\Downloads\OMR MCQS DATASET.v1i.yolov8\test\images\test_img_20.jpg"
 OUTPUT_JSON = "omr_output.json"
 SAVE_DEBUG_IMAGE = True  # Set to True to save annotated image
 
